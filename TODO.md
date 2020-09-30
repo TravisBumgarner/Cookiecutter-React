@@ -1,0 +1,3 @@
+- [ ] Update Readme
+- [ ] Add git init to shell script
+- [ ] Add more boilerplate to src
