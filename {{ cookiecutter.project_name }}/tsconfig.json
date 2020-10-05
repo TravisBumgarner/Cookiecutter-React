@@ -11,5 +11,13 @@
     "exclude": [
         "node_modules",
         "**/*.spec.ts"
-    ]
+    ],
+    "paths": {
+        "sharedComponents": [
+            "src/sharedComponents"
+        ],
+        "theme": [
+            "src/theme.tsx"
+        ],
+    }
 }

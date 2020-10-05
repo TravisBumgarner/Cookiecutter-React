@@ -1,5 +1,5 @@
 {
     "scripts": {
-        "start-dev": "NODE_ENV=development webpack-dev-server --env.NODE_ENV=development --mode=development --config webpack.js"
+        "start-dev": "NODE_ENV=development webpack-dev-server --mode=development --config webpack.js"
     }
 }

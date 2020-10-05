@@ -9,6 +9,11 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        alias: {
+            sharedComponents: path.resolve(__dirname, 'src/sharedComponents/'),
+            theme: path.resolve(__dirname, 'src/theme.tsx'),
+
+        }
     },
     module: {
         rules: [
@@ -18,6 +23,12 @@ module.exports = {
                 exclude: /node_modules/,
             },
         ]
+    },
+    devServer: {
+        contentBase: './public',
+        port: 3000,
+        historyApiFallback: true,
+        publicPath: '/'
     },
     plugins: [new HtmlWebpackPlugin({ template: './src/index.template.ejs' })],
 };
