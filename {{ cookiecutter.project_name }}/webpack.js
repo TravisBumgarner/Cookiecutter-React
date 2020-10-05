@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     entry: './src/index.tsx',
     output: {
-        path: path.resolve(__dirname, 'lib'),
+        path: path.resolve(__dirname, 'public'),
         filename: 'app.[contenthash].js'
     },
     resolve: {
@@ -12,7 +12,6 @@ module.exports = {
         alias: {
             sharedComponents: path.resolve(__dirname, 'src/sharedComponents/'),
             theme: path.resolve(__dirname, 'src/theme.tsx'),
-
         }
     },
     module: {
@@ -26,7 +25,7 @@ module.exports = {
     },
     devServer: {
         contentBase: './public',
-        port: 3000,
+        port: 3003,
         historyApiFallback: true,
         publicPath: '/'
     },
