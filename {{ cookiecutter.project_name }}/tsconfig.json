@@ -1,24 +1,21 @@
 {
     "compilerOptions": {
-        "outDir": "./lib/",
-        "target": "es5",
-        "jsx": "react",
-        "allowSyntheticDefaultImports": true,
-        "baseUrl": "./",
-        "paths": {
-            "sharedComponents": [
-                "src/sharedComponents"
-            ],
-            "theme": [
-                "src/theme.tsx"
-            ],
-        }
-    },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "node_modules",
-        "**/*.spec.ts"
-    ]
-}
+      "outDir": "./dist/",
+      "noImplicitAny": true, 
+      "module": "es6",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true,
+      "moduleResolution": "node",
+      "baseUrl": ".",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "paths": {
+        "*": ["src/types/*"],
+        "sharedComponents": ["src/sharedComponents"],
+        "sharedTypes": ["src/sharedTypes/index.ts"],
+        "theme": ["src/theme.js"],
+        "utilities": ["src/utilities"]
+      }
+    }
+  }
