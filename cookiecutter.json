@@ -1,4 +1,5 @@
 {
-    "project_name": "my-react-template",
+    "project_name": "my-react-project",
+    "folder_name": "frontend",
     "project_author": "Travis Bumgarner"
 }
