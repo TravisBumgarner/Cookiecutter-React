@@ -1,17 +1,20 @@
 #!/bin/sh
 
-DESTINATION="{{cookiecutter.project_parent}}/{{cookiecutter.project_name}}/{{cookiecutter.frontend_folder}}"
+cd ..
+
+DESTINATION="{{cookiecutter.project_parent}}/{{cookiecutter.project_name}}"
 
 echo "Moving to ${DESTINATION}"
 
 mkdir -p $DESTINATION
 
-# mv ./{{cookiecutter.frontend_folder}} $DESTINATION
+echo "We're in ${pwd}"
+mv ./{{cookiecutter.frontend_folder}} $DESTINATION
 
-# cd DESTINATION
+cd $DESTINATION
 
-# npm i
+npm i
 
-# code .
+code .
 
-# exit 0
+exit 0
