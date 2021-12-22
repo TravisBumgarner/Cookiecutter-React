@@ -2,7 +2,7 @@
   "name": "{{ cookiecutter.project_name }}",  
   "author": "{{ cookiecutter.author }}",  
   "scripts": {
-    "sd:backend": "nodemon ./index.ts",
+    "sd:be": "nodemon ./index.ts",
     "km:make": "knex migrate:make --knexfile ./src/knexfile.js --",
     "km:latest": "knex migrate:latest --knexfile ./src/knexfile.js"
   },
