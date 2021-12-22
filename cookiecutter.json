@@ -1,5 +1,6 @@
 {
-    "project_name": "my-react-project",
-    "folder_name": "frontend",
-    "project_author": "Travis Bumgarner"
+    "project_name": "my-full-stack-app",
+    "project_parent": "/Users/travisbumgarner/Programming",
+    "frontend_folder": "frontend",
+    "author": "Travis Bumgarner"
 }
