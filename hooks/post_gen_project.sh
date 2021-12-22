@@ -12,6 +12,8 @@ mv ./{{cookiecutter.frontend_folder}} $DESTINATION
 
 cd $DESTINATION
 
+cd {{cookiecutter.frontend_folder}} 
+
 npm i
 
 code .
