@@ -8,15 +8,11 @@ echo "Moving to ${DESTINATION}"
 
 mkdir -p $DESTINATION
 
-mv ./{{cookiecutter.backend_folder}} $DESTINATION
+mv ./{{cookiecutter.frontend_folder}} $DESTINATION
 
 cd $DESTINATION
 
-# Make Empty Folders
-mkdir ./src/db/seeds 
-mkdir ./src/db/migrations 
-
-cd {{cookiecutter.backend_folder}}
+cd {{cookiecutter.frontend_folder}} 
 
 npm i
 
