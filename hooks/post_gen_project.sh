@@ -8,7 +8,6 @@ echo "Moving to ${DESTINATION}"
 
 mkdir -p $DESTINATION
 
-echo "We're in ${pwd}"
 mv ./{{cookiecutter.frontend_folder}} $DESTINATION
 
 cd $DESTINATION
