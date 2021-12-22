@@ -1,5 +1,5 @@
 {
-  "name": "{{ cookiecutter.project_name }} Frontend",  
+  "name": "{{ cookiecutter.project_name }}",  
   "author": "{{ cookiecutter.author }}",  
   "dependencies": {
     "react": "^16.14.0",
