@@ -1,5 +1,4 @@
 {
-    "project_name": "my-full-stack-app",
-    "frontend_folder": "frontend",
+    "project_folder": "frontend",
     "author": "Travis Bumgarner"
 }
