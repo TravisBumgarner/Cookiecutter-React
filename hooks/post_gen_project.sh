@@ -1,5 +1,5 @@
 #!/bin/sh
 
-npm i
+yarn
 
 exit 0
