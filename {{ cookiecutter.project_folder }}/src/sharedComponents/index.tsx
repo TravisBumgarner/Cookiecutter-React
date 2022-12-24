@@ -1,5 +1,3 @@
-
-
 import Loading from './Loading'
 import * as Heading from './Heading'
 import Button from './Button'
@@ -17,5 +15,5 @@ export {
     Modal,
     Input,
     Icon,
-    StyledNavLink
+    StyledNavLink,
 }
