@@ -25,6 +25,6 @@
   },
   "scripts": {
     "start": "webpack serve --mode=development --config=webpack.js",
-    "bundle": " rm -rf ./public; mkdir ./public; webpack --mode=production --config=webpack.js"
+    "build": " rm -rf ./build; mkdir ./build; webpack --mode=production --config=webpack.js"
   }
 }
