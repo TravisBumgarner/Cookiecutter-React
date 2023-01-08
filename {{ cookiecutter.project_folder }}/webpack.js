@@ -2,6 +2,14 @@ const path = require('path')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+let __STATIC__
+if (process.env.NODE_ENV === 'production') {
+  __STATIC__ = '"someprodurl"'
+} else {
+  __STATIC__ = '"http://localhost:3000/public/"'
+}
+
+
 module.exports = {
   entry: './src/index.tsx',
   output: {
@@ -35,6 +43,7 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
+    new webpack.DefinePlugin({ __STATIC__ }),
     new HtmlWebpackPlugin({
       template: './src/static/index.template.ejs',
       favicon: './src/static/favicon.png',
