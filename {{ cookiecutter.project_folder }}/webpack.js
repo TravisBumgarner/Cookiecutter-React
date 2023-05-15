@@ -14,8 +14,9 @@ if (process.env.NODE_ENV === 'production') {
 module.exports = {
   entry: './src/index.tsx',
   output: {
-    filename: 'app.bundle.js',
+    filename: 'app.[contenthash].js',
     path: path.resolve(__dirname, 'build'),
+    publicPath: '/'
   },
   module: {
     rules: [
